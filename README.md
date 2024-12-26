@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+<div align="center"> <h2><strong>HorizonX - Weather Application</strong></h2> </div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌦️ Introduction
 
-Currently, two official plugins are available:
+A dynamic and responsive weather application that provides real-time weather updates, 5-day forecasts, and detailed insights into environmental conditions. Built with the latest Next.js 15, React 19, and powered by the OpenWeather API, this app ensures seamless performance and an intuitive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **TanStack Query**     
+- **TailwindCSS**  
+- **ShadCN**  
+- **TypeScript**
+- **ReCharts**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ⚡ Features
 
-- Configure the top-level `parserOptions` property like this:
+🟢 **Real-Time Weather Updates:** View current temperature, weather conditions, humidity, wind speed, and more for your selected location.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+📅 **5-Day Forecast:** Provides detailed weather forecasts for the next 5 days, including high/low temperatures, precipitation chances, and wind speeds.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+🌍 **Search Functionality:** Search for weather data in any city across the globe with a robust and efficient search bar.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+⭐ **Favorites Management:** Save your favorite cities for quick access to their weather details at any time.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+📊 **Interactive Temperature Graphs:** Visualize hourly temperature trends with dynamic graphs rendered using Chart.js.
+
+☀️ **Detailed Weather Insights:** Get additional details such as sunrise/sunset times, wind direction, and atmospheric pressure.
+
+📂 **Modern Responsive Design:** A sleek and responsive user interface optimized for all devices, including desktops, tablets, and smartphones.
